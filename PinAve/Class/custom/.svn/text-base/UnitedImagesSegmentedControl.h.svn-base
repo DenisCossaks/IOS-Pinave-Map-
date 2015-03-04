@@ -1,0 +1,30 @@
+//
+//  UnitedImagesSegmentedControl .h
+//  BabyName
+//
+//  Created by RamotionMac on 5/25/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UnitedImagesSegmentedControl : UIView {
+    UISegmentedControl* segmentedControl;
+    UIImageView* segmentedImageView;
+    NSArray* buttonsImages;
+    
+    BOOL isMomentaryMode;
+    UIImage* momentaryModeImage;
+    
+    id target;
+    SEL action;
+}
+
+@property(nonatomic) NSInteger selectedSegmentIndex;
+ 
+
+- (id)initWithImages:(NSArray *)images; // init with images for buttons
+- (void)setMomentaryModeWithImage:(UIImage*)image;
+- (void)addTarget:(id)target action:(SEL)action;
+
+@end

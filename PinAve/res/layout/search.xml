@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Header -->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <ImageView
+                android:id="@+id/iv_search_top"
+                android:layout_width="108dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/search_top_logo" />
+
+            <Button
+                android:id="@+id/btn_fliping"
+                android:layout_width="42dp"
+                android:layout_height="34dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/btnmap" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="57dp"
+                android:layout_height="34dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" android:layout_gravity="left|center_vertical"/>
+
+        </FrameLayout>
+
+        <!-- Board -->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- List Pins -->
+
+            <LinearLayout
+                android:id="@+id/search_board_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:background="@drawable/label_location" >
+
+                    <!-- Location -->
+
+                    <TextView
+                        android:id="@+id/tv_search_location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="Loading..."
+                        android:textColor="@color/white"
+                        android:textSize="15dip" />
+                </LinearLayout>
+
+                <!--  -->
+
+                <ListView
+                    android:id="@+id/lv_search_pin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffffff" />
+            </LinearLayout>
+
+            <!-- Map pins -->
+
+            <FrameLayout
+                android:id="@+id/search_board_map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <com.google.android.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:apiKey="07OgOGMw_uqT1N7yFyY4KIclJKOb4rSgNAW3LAg"
+                    android:clickable="true"
+                    android:enabled="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- search -->
+
+                    <LinearLayout
+                        android:id="@+id/map_search_bar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dip" >
+
+                        <LinearLayout
+                            android:layout_width="40dip"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/search_left" >
+
+                            <Button
+                                android:id="@+id/btn_search_opt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/btn_search_opt" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edit_search"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_center"
+                            android:hint="search"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1" />
+
+                        <FrameLayout
+                            android:layout_width="90dip"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/search_right" >
+
+                            <Button
+                                android:id="@+id/btn_search"
+                                android:layout_width="55dip"
+                                android:layout_height="30dip"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="10dip"
+                                android:background="@drawable/btn_search_xml"
+                                android:text="Search"
+                                android:textColor="@color/white" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <!-- location -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/btn_search_location"
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/btnlocation" />
+
+                        <TextView
+                            android:id="@+id/tv_search_location"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="USA Altantic Ocean"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_search_search"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/btnsearch" />
+
+                <TextView
+                    android:id="@+id/tv_location_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:text="Radius = 111 KM, Pins = 20"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

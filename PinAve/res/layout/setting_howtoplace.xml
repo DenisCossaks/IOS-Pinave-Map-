@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="How to place pins"
+                android:textColor="#ffffffff"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="46dp"
+                android:layout_height="34dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Placing pins is few clicks away. 
+On PinAve map, zoom into the location where you would like your pin to be located. Touch the location and hold your finger until you ‘drop a pin’.  When the pin is dropped, the pin address will be displayed on the pin. If the pin is dropped at a wrong address, zoom further in the map and touch the pin again until it is unpinned so that it could be moved around. Move the pin (while still touching the screen) and drop the pin at the correct location.
+
+When the pin is placed at the correct location, click on the ‘>’ arrow to insert pin information, images, icon selection and schedules.
+
+It’s that simple!
+
+Note that only users with complete profile are able to place pin. Should your profile be incomplete, you will be asked to update your profile prior to placing pin data.
+"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+</LinearLayout>

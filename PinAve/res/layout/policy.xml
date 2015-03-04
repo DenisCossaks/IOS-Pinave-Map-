@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <TextView
+                android:id="@+id/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Privacy Policy"
+                android:textColor="#ffffffff"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="57dp"
+                android:layout_height="34dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" android:layout_gravity="left|center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tv_terms_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="PinAve.com recognizes and values the protection of your personal information. We also recognize our users’ concerns about the collection of their personal information and how PinAve.com will use that information.
+
+PinAve.com has implemented this privacy policy in order to reassure our website users about how PinAve.com will utilize their personal information.
+
+To make this notice easy to find, we make it available on our homepage and at every point where personally identifiable information may be requested.
+
+Collection of Personal Information
+
+Upon visiting PinAve.com, the IP address used to access the site will be logged along with the dates and time of your access. The information is to track user’s activity and gather broad demographic information for internal use. Most importantly, it is purely used to analyze trends, administer the site and any recorded IP addresses are not linked to personally identify information.
+
+Links to third party Websites
+
+We include links on this site for use and reference only. The user should be aware that the privacy policies of these (third party sites) may differ from PinAve.com
+
+Changes to this Privacy Statement
+
+We may now and then update or amend this privacy policy and all information we hold will be governed by our most recent policy. Our most up to date Privacy Policy will be available on our website at privacy policy or by contracting us at Pinave.com. For more information, you may write to us-PO Box 4137 Melbourne University 3052 AUSTRALIA."
+                android:textColor="@color/black" android:padding="10dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

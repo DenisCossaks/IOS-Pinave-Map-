@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="      Category Definition"
+                android:textColor="#ffffffff"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="44dp"
+                android:layout_height="34dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eef1f2"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.montre.pinave"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="6" />
+
+    <application
+        android:icon="@drawable/icon_pinave"
+        android:label="@string/app_name" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:configChanges="keyboardHidden|orientation"
+            android:required="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity android:name=".login.HomeActivity" >
+        </activity>
+        <activity android:name=".login.LoginActivity" >
+        </activity>
+        <activity android:name=".login.SignupActivity" >
+        </activity>
+        <activity android:name=".login.TermsActivity" >
+        </activity>
+        <activity android:name=".login.PolicyActivity" >
+        </activity>
+
+        <!-- Navigate -->
+        <activity android:name="BottomTab" >
+        </activity>
+        <activity android:name="com.montre.navigation.NavigationMapActivity" />
+        <activity
+            android:name="com.montre.navigation.NavigationActivity"
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.montre.navigation.NavigationGroupActivity" />
+        <activity android:name="com.montre.navigation.ExploreViewGroup" />
+        <activity android:name="com.montre.navigation.MyAvenueViewGroup" />
+        <activity android:name="com.montre.navigation.PlacePinViewGroup" />
+        <activity android:name="com.montre.navigation.RouterViewGroup" />
+        <activity android:name="com.montre.navigation.SettingViewGroup" />
+
+        <!-- com.montre.ui.explore -->
+        <activity
+            android:name="com.montre.ui.explore.ExploreActivity"
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity android:name="com.montre.ui.explore.SearchActivity" />
+        <activity android:name="com.montre.ui.explore.NotificationActivity" />
+        <activity android:name="com.montre.ui.explore.AddLocationActivity" />
+        <activity
+            android:name="com.montre.ui.explore.SearchListActivity"
+            android:theme="@style/Theme.Transparent" />
+
+        <!-- com.montre.ui.myavenue -->
+        <activity android:name="com.montre.ui.myavenue.MyAvenueActivity" />
+        <activity android:name="com.montre.ui.myavenue.MyFriendsActivity" />
+        <activity android:name="com.montre.ui.myavenue.MyAvenueUserActivity" />
+
+        <!-- com.montre.ui.placepin -->
+        <activity android:name="com.montre.ui.placepin.PlacePinActivity" />
+        <activity android:name="com.montre.ui.placepin.ActivePinActivity" />
+        <activity android:name="com.montre.ui.placepin.SelectCategoryActivity" />
+        <activity android:name="com.montre.ui.placepin.SelectScheduleActivity" />
+
+        <!-- com.montre.ui.router -->
+        <activity android:name="com.montre.ui.router.RouterActivity" />
+
+        <!-- com.montre.ui.setting -->
+        <activity android:name="com.montre.ui.setting.SettingActivity" />
+        <activity android:name="com.montre.ui.setting.ProfileActivity" />
+        <activity android:name="com.montre.ui.setting.PinSettingActivity" />
+        <activity android:name="com.montre.ui.setting.MapSettingActivity" />
+        <activity android:name="com.montre.ui.setting.UnitSettingActivity" />
+        <activity android:name="com.montre.ui.setting.CategoryDefineActivity" />
+        <activity android:name="com.montre.ui.setting.HowToPlaceActivity" />
+        <activity android:name="com.montre.ui.setting.AboutNotifyActivity" />
+        <activity android:name="com.montre.ui.setting.AboutMessageActivity" />
+
+        <!-- com.custome -->
+        <activity android:name="com.custom.gallery.IntroduceActivity" />
+
+        <!-- pindetail -->
+        <activity android:name="com.montre.pindetail.PinDetailActivity" />
+        <activity android:name="com.montre.pindetail.ReviewActivity" />
+        <activity android:name="com.montre.pindetail.SendMessageActivity" />
+        <activity android:name="com.montre.pindetail.GiveRatingActivity" />
+        <activity android:name="com.montre.pindetail.FullImageActivity" />
+
+        <!-- etc -->
+        <activity android:name="com.montre.etc.SearchOptionActivity" />
+        <activity android:name="com.montre.etc.SelectCategoriesActivity" />
+        
+        <!-- twitter -->
+        <activity android:name="com.recipe.ifoodtv.twitter.PostOnTwitterActivity"></activity>
+	    <activity android:name="com.recipe.ifoodtv.twitter.TwitterLogin"></activity>
+	    
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

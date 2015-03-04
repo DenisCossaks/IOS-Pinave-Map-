@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <TextView
+                android:id="@+id/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Privacy Policy"
+                android:textColor="#ffffffff"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="57dp"
+                android:layout_height="34dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" android:layout_gravity="left|center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+              <TextView
+        android:id="@+id/tv_terms_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="YOUR ACCEPTANCE OF THIS AGREEMENT
+
+This is an agreement between you (“you” or “your”) and “PinAve.com” (“PinAve”, “we” or “our”), that governs your use of the PINAVE.COM Web site (“Site” or “Web site”).” When you access or use the Site in any way, you agree to be bound by its Terms and Service (“Terms”).
+
+CHANGES
+
+We may once in a while change the Terms and the Site without prior notice; the users are responsible for checking these changes periodically for revisions. All amended Terms will take effect upon our posting to the Site, and any use of the site after such revisions have been posted signifies your consent to the changes.
+
+HOW YOU MAY USE OUR MATERIALS
+ 
+We use a diverse range of information, text, photographs, designs, graphics, images and other materials and effects on the PINAVE.COM Web site and are purely for informational purposes only.
+ 
+We provide the information, content or advertisements (which we collectively call the “Materials”) on the PINAVE.COM site FOR YOUR PERSONAL, NON-COMMERCIAL USE ONLY.
+ 
+Accordingly, you may view, use, copy, and distribute the Materials found on pinave.com Web sites for internal, noncommercial, informational purposes only. You are prohibited from data mining, scraping, crawling, or using any process or processes that send automated queries to the PINAVE.COM Web site for commercial use. You may also not use the PINAVE.COM Web sites to compile a collection of listings, including a competing listing product or service. You may not use the Site or any Materials for any unsolicited commercial e-mail. Except as authorized in this paragraph, you are not being granted a license under any copyright, trademark, patent or other intellectual property right in the Materials or the products, services, processes or technology described therein. All such rights are retained by pinave.com, its subsidiaries, parent companies, and/or any third party owner of such rights.
+  
+HOW YOU MAY USE OUR NAME OR BRAND
+ 
+PinAve.com name, logos and slogans are all a copyright of PinAve.com website. All copies that you make of the Materials or this site must bear any copyright, trademark or other proprietary notice located on the site that pertains to the material being copied. You are permitted to use any PINAVE.COM name or logo in any advertising, publicity or in any other commercial manner without the prior written consent of PINAVE.COM provided it is not derogatory by any means. Any doubt or concern should be discussed prior to the usage directly with PinAve.com first.
+ 
+ 
+HOW WE MAY USE INFORMATION YOU PROVIDE TO US
+ 
+Do not send us any confidential or proprietary information. Any material, including, but not limited to any feedback, data, answers, questions, comments, suggestions, ideas or the like, which you send to us will be treated as being non-confidential and nonproprietary. We assume no obligation to protect confidential or proprietary information (other than personally identifiable information including contact details or email addresses) from disclosure and will be free to reproduce, use, and distribute the information to others without restriction. We will also be free to use any ideas, concepts, know-how or techniques contained in information that you send us for any purpose whatsoever including but not limited to developing, manufacturing and marketing products and services incorporating such information.
+ 
+ 
+NO ENDORSEMENTS MADE BY PINAVE.COM
+ 
+We do not investigate, represent or endorse the accuracy, legality, legitimacy, validity or reliability of any products, services, deals, coupons or other promotions (“Promotions”) or Materials, including advice, ratings, and recommendations contained on, distributed through, or linked, downloaded or accessed from the PINAVE.COM Web sites or the third-party websites linked within PinAve.com website.
+ 
+References that we make to any names, marks, content, products or services of third parties or hypertext links to third party sites or information do not constitute or imply our endorsement, sponsorship, or recommendation of the third party, of the quality of any product or service, advice, information or other materials displayed, purchased, or obtained by you as a result of an advertisement or any other information or offer in or in connection with the PINAVE.COM Web site.
+ 
+The Site may contain copyrighted material, the use of which has not always been specifically authorized by the copyright owner nor denied. We make such material available with attribution and no derivative for informational purposes only. We believe this constitutes a ‘fair use’ of any such copyrighted material. Any Materials that the copyright owner wishes to deny use of must be explicitly and officially communicated to PinAve.com unless previously authorized.
+  
+CONTENT DISCLAIMER
+ 
+PinAve.com communicates information provided and created by advertisers, content partners, software developers, publishers, marketing agents, employees, users, resellers and other third parties. PinAve.com has no control over the accuracy of such information on our pages, and material on the PINAVE.COM Web site may include technical inaccuracies or typographical errors.
+ 
+We make no guarantees, nor can we be responsible for any such information, including its currency, content, quality, copyright compliance or legality, or any resulting loss or damage.
+ 
+All of the data on Products and Promotions including but not limited to, the prices and the availability of any product or service or any feature thereof, is subject to change without notice by the party providing the Product or Promotion. You should use discretion while browsing the Internet.
+ 
+PinAve.com reserves the right, in its sole discretion and without any obligation, to make improvements to, or correct any error or omissions in, any portion of the Sites. Where appropriate, we will endeavor to update information listed on the Web site on a timely basis, but shall not be liable for any inaccuracies.
+ 
+Links to external Internet sites are provided within the content on the Site as a convenience to users. The listing of an external site does not imply endorsement of the site by PinAve.com. PinAve.com does not make any representations regarding the availability and performance of its Web site or any of the Web sites to which we provide links. When you click on advertiser banners, sponsor links, or other external links from the Site, your browser automatically may direct you to a new browser window that is not hosted or controlled by PinAve.com. PinAve.com and its affiliates are not responsible for the content, functionality, or technological safety of these external sites.
+ 
+We reserve the right to disable links to or from third-party sites to our Site, although we are under no obligation to do so. This right to disable links includes links to or from advertisers, sponsors, and content partners that may use our Marks as part of a co-branding relationship.
+ 
+Some external links may produce information that some people find objectionable, inappropriate, or offensive. We are not responsible for the accuracy, relevancy, copyright compliance, legality, or decency of material contained in any externally linked Web sites. We do not fully screen or investigate business listing Web sites before or after including them in directory listings that become part of the Materials on our Site, and we make no representation and assume no responsibility concerning the content that third parties submit to become listed in any of these directories.
+  
+WARRANTY DISCLAIMER
+
+ Any use of the PINAVE.COM Web site, reliance upon any Materials, and any use of the Internet generally shall be at your sole risk. PINAVE.COM disclaims any and all responsibility or liability for the accuracy, content, completeness, legality, reliability, or operability or availability of information or material displayed in the PINAVE.COM results.
+ 
+THE SITE (INCLUDING MATERIALS AND INFORMATION THEREIN) ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. PINAVE.COM DISCLAIMS, TO THE FULLEST EXTENT PERMITTED UNDER LAW, ANY WARRANTIES REGARDING THE SECURITY, RELIABILITY, TIMELINESS, ACCURACY AND PERFORMANCE OF THE SITE AND MATERIALS. PINAVE.COM DOES NOT WARRANT THAT ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR THAT THE CONTENT IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+ 
+PINAVE.COM DISCLAIMS ANY AND ALL WARRANTIES TO THE FULLEST EXTENT OF THE LAW, INCLUDING ANY WARRANTIES FOR ANY INFORMATION, GOODS, OR SERVICES, OBTAINED THROUGH, ADVERTISED OR RECEIVED THROUGH ANY LINKS PROVIDED BY OR THROUGH THE SITE.
+
+ 
+LIMITATION OF LIABILITY
+ 
+IN NO EVENT SHALL PINAVE.COM BE LIABLE TO ANY USER ON ACCOUNT OF SUCH USER’S USE, MISUSE OR RELIANCE ON THE SITE FOR ANY DAMAGES WHATSOEVER, INCLUDING DIRECT, SPECIAL, PUNITIVE, INDIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES OR DAMAGES FOR LOSS OF PROFITS, REVENUE, USE, OR DATA WHETHER BROUGHT IN WARRANTY, CONTRACT, INTELLECTUAL PROPERTY INFRINGEMENT, TORT (INCLUDING NEGLIGENCE) OR OTHER THEORY, EVEN IF PINAVE.COM ARE AWARE OF OR HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE, ARISING OUT OF OR CONNECTED WITH THE USE (OR INABILITY TO USE) OR PERFORMANCE OF THE SITE, THE MATERIALS OR THE INTERNET GENERALLY, OR THE USE (OR INABILITY TO USE), RELIANCE UPON OR PERFORMANCE OF ANY MATERIAL CONTAINED IN OR ACCESSED FROM ANY SITE. PINAVE.COM DOES NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF ANY INFORMATION, APPARATUS, PRODUCT OR PROCESS DISCLOSED ON THE SITE OR OTHER MATERIAL ACCESSIBLE FROM THE SITE
+ 
+THE USER OF THIS SITE ASSUMES ALL RESPONSIBILITY AND RISK FOR THE USE OF THIS SITE AND THE INTERNET GENERALLY.
+ 
+THE FOREGOING LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF THE ESSENTIAL PURPOSE OF ANY LIMITED REMEDY AND TO THE FULLEST EXTENT PERMITTED UNDER APPLICABLE LAW.
+ 
+ 
+THIRD PARTY SITES
+ 
+Your correspondence or business dealing with or participation in the sales promotions of advertisers or service providers found on or through the Site, including payment and delivery of related goods or services, and any other terms, conditions, and warranties or representations associated with such dealings, are solely between you and such advertisers or service providers. You assume all risks arising out of or resulting from your transaction of business over the Internet, and you agree that we are not responsible or liable for any loss or result of the presence of information about or links to such advertisers or service providers on the Site. You acknowledge and agree that we are not responsible or liable for the availability, accuracy, copyright compliance, legality, decency or any other aspect of the content, advertising, products, services, or other materials on or available from such sites or resources. You acknowledge and agree that your use of these linked sites is subject to different terms of use than these Terms, and may be subject to different privacy practices than those set forth in the Privacy Policy governing the Site. We do not assume any responsibility for review or enforcement of any local licensing requirements that may be applicable to businesses listed on the Site.
+  
+MONITORING OF MATERIALS TRANSMITTED BY YOU
+ 
+Changes may be periodically incorporated into this Site. PinAve.com may make improvements and/or changes in the products, services and/or programs described in these Sites and the Materials at any time without notice.
+ 
+We are under no obligation to monitor the material residing on or transmitted to this Site. However, anyone using this Site agrees that PinAve.com may monitor the Site contents periodically to (1) comply with any necessary laws, regulations or other governmental requests; (2) to operate the Site properly or to protect itself and its users. PinAve.com reserves the right to modify, reject or eliminate any material residing on or transmitted to its Site that it, in its sole discretion, believes is unacceptable or in violation of the law or these Terms and Conditions.
+ 
+ 
+DELETIONS FROM SERVICE
+ 
+PinAve.com will delete any materials at the request of the user who submitted the materials or at the request of an advertiser who has decided to “opt-out” of the addition of materials to its advertising, including, but not limited to ratings and reviews provided by third parties. PinAve.com reserves the right to delete (or to refuse to post to public forums) any materials it deems detrimental to the system or is, or in the opinion of PinAve.com, may be, defamatory, infringing or violate of applicable law. PinAve.com reserves the right to exclude Material from the Site. Materials submitted to PinAve.com for publication on the Site may be edited for length, clarity and/or consistency with PinAve.com Editorial Standards.
+ 
+ 
+INDEMNIFICATION
+ 
+You agree to indemnify and hold us and (as applicable) our parent, subsidiaries, affiliates, officers, directors, agents, and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of your breach of these Terms, your violation of any law, or your violation of the rights of a third party, including the infringement by you of any intellectual property or other right of any person or entity. These obligations will survive any termination of the Terms.
+
+ 
+MISCELLANEOUS
+ 
+These Terms constitute the entire agreement between us and supersedes and replaces all prior or contemporaneous understandings or agreements, written or oral, regarding the subject matter of these Terms.
+  
+Any waiver of any provision of the Terms will be effective only if in writing and signed by you and PinAve.com. PinAve.com reserves the right to investigate complaints or reported violations of these Terms and to take any action we deem necessary and appropriate. Such action may include reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties. In addition, we may take action to disclose any information necessary or appropriate to such persons or entities relating to e-mail addresses, usage history, posted materials, IP addresses and traffic information. PinAve.com reserves the right to seek all remedies available at law and in equity for violations of these Terms."
+        android:textColor="@color/black"
+        android:padding="15dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

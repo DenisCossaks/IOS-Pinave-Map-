@@ -1,0 +1,113 @@
+//
+//  UnitedImagesSegmentedControl .m
+//  BabyName
+//
+//  Created by RamotionMac on 5/25/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "UnitedImagesSegmentedControl.h"
+
+
+@implementation UnitedImagesSegmentedControl
+
+ 
+
+#define kMargin (iPhone ? 7 : 14)
+
+- (void)dealloc {
+    [segmentedControl release];
+    [segmentedImageView release];
+    [buttonsImages release];
+    [super dealloc];
+}
+
+- (id)initWithImages:(NSArray *)images {
+    self = [super init];
+    if (self != nil) {
+        buttonsImages = [[NSArray alloc] initWithArray: images];
+        
+        // set frame size according to first image
+        UIImage* firstImage = [buttonsImages objectAtIndex: 0];
+        
+        if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
+        {
+        self.frame = CGRectMake(0, 0, firstImage.size.width/2, firstImage.size.height/2);
+        }
+        if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
+        {
+            self.frame = CGRectMake(0, 0, firstImage.size.width, firstImage.size.height);
+        }
+        // create new segmented control
+        [segmentedControl autorelease];
+        [segmentedControl removeFromSuperview];
+        
+        NSMutableArray* items = [[[NSMutableArray alloc] initWithCapacity: [buttonsImages count]] autorelease];
+        for (int i=0; i < [buttonsImages count]; i++) {
+            NSString* item = [NSString stringWithFormat: @"%i", i];
+            [items addObject: item];
+        }
+        
+        segmentedControl = [[UISegmentedControl alloc] initWithItems: items];
+        segmentedControl.frame = CGRectMake(kMargin, kMargin, self.frame.size.width - 2*kMargin, self.frame.size.height - 2*kMargin);
+        
+        [segmentedControl addTarget:self action:@selector(segmentedControlAction) forControlEvents: UIControlEventValueChanged];        
+        
+        [self addSubview: segmentedControl];
+        
+        // create new segmented image view on top of segmented control
+        [segmentedImageView autorelease];
+        [segmentedImageView removeFromSuperview];
+        
+        segmentedImageView = [[UIImageView alloc] initWithImage: firstImage];
+        segmentedImageView.frame = self.frame;
+        
+        [self addSubview: segmentedImageView];
+    }
+    return self;
+}
+
+
+-(NSInteger)selectedSegmentIndex {
+    return segmentedControl.selectedSegmentIndex;
+}
+
+- (void)setSelectedSegmentIndex:(NSInteger)selectedSegmentIndex {
+    segmentedControl.selectedSegmentIndex = selectedSegmentIndex;
+    segmentedImageView.image = [buttonsImages objectAtIndex: segmentedControl.selectedSegmentIndex];
+}
+
+
+- (void)addTarget:(id)aTarget action:(SEL)aAction {
+    // save target and action
+    [target autorelease];
+    target = [aTarget retain];
+    action = aAction;
+}
+
+- (void)setMomentaryModeWithImage:(UIImage*)image {
+    isMomentaryMode = YES;
+    [momentaryModeImage autorelease];
+    momentaryModeImage = [image retain];
+    segmentedImageView.image  = momentaryModeImage;
+    segmentedControl.selectedSegmentIndex = -1;
+    segmentedControl.momentary = TRUE;
+}
+
+- (void)segmentedControlAction {
+    if (action != nil) {
+        [target performSelector: action];
+    }
+    if (segmentedControl.selectedSegmentIndex >= 0) {
+        segmentedImageView.image = [buttonsImages objectAtIndex: segmentedControl.selectedSegmentIndex];
+    }
+    if (isMomentaryMode) {
+        [self performSelector:@selector(showMomentaryImage) withObject:nil afterDelay:0.3];
+    }
+}
+
+- (void) showMomentaryImage {
+    segmentedImageView.image  = momentaryModeImage;
+}
+
+@end

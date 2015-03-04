@@ -1,0 +1,29 @@
+//
+//  SelectDecadeView.h
+//  BabyName
+//
+//  Created by RamotionMac on 7/5/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "Name.h"
+#import "SelectDecadeViewController.h"
+
+@interface SelectDecadeView : UIView <UIPickerViewDataSource, UIPickerViewDelegate> {
+    BabyNameGender gender;
+    int selectedDecade;
+    
+    id<SelectDecadeListener> selectDecadeListener;
+    
+    UIPickerView* decadePickerView;
+}
+
+@property BabyNameGender gender;
+@property int selectedDecade;
+@property (nonatomic, retain) id<SelectDecadeListener> selectDecadeListener;
+@property (nonatomic, retain) IBOutlet UIPickerView* decadePickerView;
+
+- (IBAction)onBgButtonClick:(id)sender;
+
+@end

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#88000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:orientation="vertical" android:layout_margin="20dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/search_categorylist">
+
+            <Button
+                android:id="@+id/btn_center"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/search_category_btn"
+                android:textColor="@color/white"
+                android:textStyle="bold" android:layout_marginBottom="20dp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:layout_weight="1">
+
+            <!-- search -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffffff" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

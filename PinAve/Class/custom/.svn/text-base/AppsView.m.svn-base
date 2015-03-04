@@ -1,0 +1,140 @@
+//
+//  AppsView.m
+//  BabyName
+//
+//  Created by MacUser on 6/3/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "AppsView.h"
+
+#import "WebViewController.h"
+
+#import "AboutViewController.h"
+
+@implementation AppsView
+@synthesize iconView;
+@synthesize appName;
+@synthesize appsTag;
+@synthesize rootController;
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        //10. на эбаут скрине пофиксить фон под иконками приложения.
+        //self.backgroundColor = [UIColor blueColor];
+        //10. на эбаут скрине пофиксить фон под иконками приложения.
+        //self.frame=CGRectMake(0, 0, 320/4, 86);
+        
+        iconView = [[UIImageView alloc] initWithFrame:CGRectMake(13, 6, self.frame.size.width-16, self.frame.size.height -28 )];
+//        /10. на эбаут скрине пофиксить фон под иконками приложения.
+        //iconView.backgroundColor = [UIColor greenColor];
+        //10. на эбаут скрине пофиксить фон под иконками приложения.
+        iconView.image=[UIImage imageNamed:@"app_icon.png"]; 
+        [self addSubview:iconView];
+        [iconView release];
+        
+        appName = [[UILabel alloc] initWithFrame:CGRectMake(15, self.frame.size.height-18, self.frame.size.width-22, 11)];
+        appName.backgroundColor =[UIColor clearColor]; //[UIColor redColor];//
+        appName.textColor=[UIColor whiteColor ];
+       
+        appName.adjustsFontSizeToFitWidth=4;
+        appName.font=[UIFont systemFontOfSize:12];
+        appName.text=@"Title App";
+        [self addSubview:appName];
+        [appName release];
+    }
+    return self;
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
+{
+    
+    NSLog(@"AppsView TouchBegan");
+    //AboutViewController*aboutController = [[[AboutViewController alloc]init]autorelease];
+    // WebViewController*webView=[[[WebViewController    alloc]init]autorelease];
+    
+     switch (appsTag) {
+        case 0:
+            NSLog(@"AppsView 0");
+ 
+             
+             //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/contractions-counter/id437859993?mt=8"];
+             //[self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/contractions-counter/id437859993?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/pregnancy-progress/id463242632?mt=8"];
+            break;
+        case 1:
+            NSLog(@"AppsView 1");
+             
+             //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/nightlight-lullaby-songs-sleep/id443774395?mt=8"];
+//             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/nightlight-lullaby-songs-sleep/id443774395?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/popular-baby-names/id446488283?mt=8"];
+            break;
+        case 2:
+            NSLog(@"AppsView 2");
+             
+           //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/nursery-clock-flashlight-breast/id444520884?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/contractions-counter/id437859993?mt=8"];
+            break;
+        case 3:
+            NSLog(@"AppsView 3");
+             
+            //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/period-pace/id440276673?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/nightlight-lullaby-songs-sleep/id443774395?mt=8"];
+            break;
+         case 4:
+             NSLog(@"AppsView 4");
+             
+             //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/period-pace/id440276673?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/nursery-clock-flashlight-breast/id444520884?mt=8"];
+             break;
+         case 5:
+             NSLog(@"AppsView 5");
+             
+             //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/period-pace/id440276673?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/period-pace/id440276673?mt=8"];
+             break;
+         case 6:
+             NSLog(@"AppsView 6");
+             
+             //[self.rootController testDelegateMethodappsWasTouchedTap:(NSString*)@"http://itunes.apple.com/us/app/period-pace/id440276673?mt=8"];
+             [self openingInSafariWithThisUrl:@"http://itunes.apple.com/us/app/fertility-clock-period-ovulation/id448978908?mt=8"];
+             break;
+        default:
+            break;
+    }
+    
+ 
+         NSLog(@"Apps Tag is  %i", appsTag);
+ //[self testDelegateMethodappsWasTouchedTap];
+}
+
+- (void)dealloc
+{
+    [super dealloc];
+}
+
+-(void)testDelegateMethodappsWasTouchedTap
+{
+    //NSLog(@"testDelegateMethodappsWasTouchedTap");
+}
+
+
+-(void) openingInSafariWithThisUrl:(NSString *)urlWllBeLoaded  
+{
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:  urlWllBeLoaded]];
+    
+}
+
+@end

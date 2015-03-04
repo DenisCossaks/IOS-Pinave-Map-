@@ -1,0 +1,33 @@
+//
+//  AppsView.h
+//  BabyName
+//
+//  Created by MacUser on 6/3/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+ 
+@class AboutViewController;
+@interface AppsView : UIView//<appsViewDelegate>
+{
+    UIImageView  *iconView;
+    UILabel      *appName;
+    AboutViewController *rootController;
+    
+    int appsTag;
+}
+@property (nonatomic, retain) UIImageView  *iconView;
+@property (nonatomic, retain) UILabel      *appName;
+@property (nonatomic)  int appsTag;
+
+@property (nonatomic, retain) AboutViewController *rootController;
+
+//-(void)testDelegateMethodappsWasTouchedTap;
+
+-(void) openingInSafariWithThisUrl:(NSString*) urlWllBeLoaded;
+
+@end
+

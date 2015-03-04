@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/label" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="      About Notification"
+                android:textColor="#ffffffff"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="47dp"
+                android:layout_height="34dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_short_selector"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="PinAve can be set to trigger notifications when your pin selections are within your selected radius. For example, if you like Garage Sales, you can set PinAve to alert you when a Garage Sales pin is within 1km to you. Alternatively, if you like discounted or sales items, you can type in a ‘sales’ keyword in PinAve Notification. While on the move, PinAve will constantly scan for pins with the related keywords around you, and you will receive a notification when a match is found. 
+Notifications are set by
+	•	Distance
+	•	Date / time
+	•	Icons and categories
+	•	Keywords
+	•	Scan frequency.
+            "
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+</LinearLayout>

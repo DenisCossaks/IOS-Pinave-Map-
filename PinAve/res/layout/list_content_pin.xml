@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:background="@drawable/cell_back" >
+
+    <FrameLayout
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center"/>
+        
+        <ImageView
+        android:id="@+id/cell_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+        
+    </FrameLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cell_title"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginTop="4dip"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cell_address"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:singleLine="true"
+            android:text="address"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/cell_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:singleLine="true"
+            android:text="distance"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cell_arrow"
+        android:layout_width="9dip"
+        android:layout_height="13dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/cell_arrow" />
+
+</LinearLayout>
